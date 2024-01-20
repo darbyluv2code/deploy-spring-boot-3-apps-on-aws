@@ -6,4 +6,4 @@ If you have questions or need tech support, post your questions to the [classroo
 
 Happy coding!
 
-[<img src="images/deploy-spring-to-aws-final-course-small.png">](http://www.luv2code.com/deploy-spring-boot-3-github)
+[<img src="images/deploy-spring-spring-boot-3-to-aws-small.png">](http://www.luv2code.com/deploy-spring-boot-3-github)
