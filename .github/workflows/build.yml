@@ -1,0 +1,156 @@
+name: Build
+
+on:
+  push:
+    branches: [ main, master ]
+
+jobs:
+  build-01-hellodemo:
+    name: "Project 01: Hello Demo"
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Set up JDK 25
+      uses: actions/setup-java@v4
+      with:
+        java-version: '25'
+        distribution: 'temurin'
+        cache: 'maven'
+
+    - name: Build project
+      run: |
+        set -e
+        echo "Building Project 01: Hello Demo"
+        cd 01-hellodemo
+        mvn clean compile -B -q || {
+          echo "Failed to compile 01-hellodemo"
+          exit 1
+        }
+        echo "Project 01 completed successfully"
+
+  build-02-local:
+    name: "Project 02: Spring MVC CRUD Local"
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Set up JDK 25
+      uses: actions/setup-java@v4
+      with:
+        java-version: '25'
+        distribution: 'temurin'
+        cache: 'maven'
+
+    - name: Build project
+      run: |
+        set -e
+        echo "Building Project 02: Spring MVC CRUD Local"
+        cd 02-spring-boot-spring-mvc-crud-local
+        mvn clean compile -B -q || {
+          echo "Failed to compile 02-spring-boot-spring-mvc-crud-local"
+          exit 1
+        }
+        echo "Project 02 completed successfully"
+
+  build-03-application-profiles:
+    name: "Project 03: AWS Application Profiles"
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Set up JDK 25
+      uses: actions/setup-java@v4
+      with:
+        java-version: '25'
+        distribution: 'temurin'
+        cache: 'maven'
+
+    - name: Build project
+      run: |
+        set -e
+        echo "Building Project 03: AWS Application Profiles"
+        cd 03-spring-boot-spring-mvc-crud-aws-application-profiles
+        mvn clean compile -B -q || {
+          echo "Failed to compile 03-spring-boot-spring-mvc-crud-aws-application-profiles"
+          exit 1
+        }
+        echo "Project 03 completed successfully"
+
+  build-04-environment-variables:
+    name: "Project 04: AWS Environment Variables"
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Set up JDK 25
+      uses: actions/setup-java@v4
+      with:
+        java-version: '25'
+        distribution: 'temurin'
+        cache: 'maven'
+
+    - name: Build project
+      run: |
+        set -e
+        echo "Building Project 04: AWS Environment Variables"
+        cd 04-spring-boot-spring-mvc-crud-aws-environment-variables
+        mvn clean compile -B -q || {
+          echo "Failed to compile 04-spring-boot-spring-mvc-crud-aws-environment-variables"
+          exit 1
+        }
+        echo "Project 04 completed successfully"
+
+  build-05-encrypted:
+    name: "Project 05: AWS Environment Variables Encrypted"
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Set up JDK 25
+      uses: actions/setup-java@v4
+      with:
+        java-version: '25'
+        distribution: 'temurin'
+        cache: 'maven'
+
+    - name: Build project
+      run: |
+        set -e
+        echo "Building Project 05: AWS Environment Variables Encrypted"
+        cd 05-spring-boot-spring-mvc-crud-aws-environment-variables-encrypted
+        mvn clean compile -B -q || {
+          echo "Failed to compile 05-spring-boot-spring-mvc-crud-aws-environment-variables-encrypted"
+          exit 1
+        }
+        echo "Project 05 completed successfully"
+
+  build-06-bonus-data-refresher:
+    name: "Project 06: Bonus - Data Refresher"
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Set up JDK 25
+      uses: actions/setup-java@v4
+      with:
+        java-version: '25'
+        distribution: 'temurin'
+        cache: 'maven'
+
+    - name: Build project
+      run: |
+        set -e
+        echo "Building Project 06: Bonus - Data Refresher"
+        cd 06-bonus-spring-boot-spring-mvc-crud-aws-environment-variables-encrypted-with-data-refresher
+        mvn clean compile -B -q || {
+          echo "Failed to compile 06-bonus-spring-boot-spring-mvc-crud-aws-environment-variables-encrypted-with-data-refresher"
+          exit 1
+        }
+        echo "Project 06 completed successfully"
