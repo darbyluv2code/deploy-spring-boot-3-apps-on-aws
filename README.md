@@ -1,6 +1,6 @@
 # Deploy Spring Boot 4 Java Apps Online to Amazon Cloud (AWS)
 
-![Build Status](https://github.com/darbyluv2code/deploy-spring-boot-apps-on-aws/actions/workflows/build.yml/badge.svg)
+[![Build Status](https://github.com/darbyluv2code/deploy-spring-boot-apps-on-aws/actions/workflows/build.yml/badge.svg)](https://github.com/darbyluv2code/deploy-spring-boot-apps-on-aws/actions/workflows/build.yml)
 
 Source code for the course: [Deploy Spring Boot 4 Java Apps Online to Amazon Cloud (AWS)](http://www.luv2code.com/deploy-spring-boot-3-github)
 
