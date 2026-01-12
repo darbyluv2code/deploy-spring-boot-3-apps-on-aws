@@ -2,9 +2,9 @@
 
 [![Build Status](https://github.com/darbyluv2code/deploy-spring-boot-apps-on-aws/actions/workflows/build.yml/badge.svg)](https://github.com/darbyluv2code/deploy-spring-boot-apps-on-aws/actions/workflows/build.yml)
 
-Source code for the course: [Deploy Spring Boot 4 Java Apps Online to Amazon Cloud (AWS)](http://www.luv2code.com/deploy-spring-boot-3-github)
+Source code for the course: [Deploy Spring Boot 4 Java Apps Online to Amazon Cloud (AWS)](https://www.luv2code.com/deploy-spring-boot-4-github)
 
-If you have questions or need tech support, post your questions to the [classroom discussion forum](https://www.udemy.com/course/deploy-java-spring-apps-online/learn/v4/questions).
+If you have questions or need tech support, post your questions to the [classroom discussion forum](https://www.luv2code.com/deploy-spring-boot-4-github).
 
 Happy coding!
 
